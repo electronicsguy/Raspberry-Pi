@@ -1,2 +1,6 @@
 # RaspberryPi
-Scripts I wrote for the Raspberry pi
+
+Some simple scripts I wrote for the Raspberry Pi.
+Enjoy :) Comments welcome.
+
+(C) Sujay Phadke. All Rights Reserved.
