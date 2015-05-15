@@ -1,0 +1,28 @@
+# Note: Paths are all relative for rsync even though 
+# they may start with a "/"
+
+# temporary and run-time dependent data in the home dir
+/.thumbnails/*
+/.cache/*
+/.local/share/*
+/.config/chromium/*
+/.cache
+/.Trash
+
+# X Windows System
+/.xsession-errors*
+
+# Gnome temp stuff
+/.compiz*/session
+/.gksu.lock
+/.gvfs
+
+# backup text files
+#*~
+#\#*\#
+
+# This script's log file
+/.backpi/rsync.log
+
+# Output data directories in /home
+/Photography

@@ -1,0 +1,50 @@
+# Note: Paths are all relative for rsync even though 
+# they may start with a "/"
+
+# Exclude temporary and run-time dependent data
+/tmp
+/lost+found
+/media
+/mnt
+/dev
+/proc
+/run
+/sys
+/root
+/var/tmp
+/var/run
+/var/log
+/var/cache
+
+# Exclude the /boot partition since it has to be mounted 
+# on the RPi and may cause a loop if not excluded
+/boot
+
+# temporary and run-time dependent data in various home dirs
+/home/*/.thumbnails/*
+/home/*/.cache/*
+/home/*/.local/share/*
+/home/*/.config/chromium/*
+/home/*/.cache
+/home/*/.Trash
+
+# X Windows System
+/home/*/.xsession-errors*
+
+# Gnome temp stuff
+/home/*/.compiz*/session
+/home/*/.gksu.lock
+/home/*/.gvfs
+
+# backup text files
+#*~
+#\#*\#
+
+# This script's log file
+/home/pi/.backpi/rsync.log
+
+# Output data directories in /home
+/home/pi/Photography
+/home/pi/Downloads
+# Used by raspi-mjpeg
+/var/www/media
