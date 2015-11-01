@@ -308,8 +308,9 @@ then
   MOUNTEDDIR=$(sudo mount | grep "$DESTMOUNTDEV" | awk '{print $3}')
   if [[ $MOUNTEDDIR != $DESTMOUNTDIR ]];
   then
-    echo -e "Error: A partition other than $DESTMOUNTDEV is mount at: $DESTMOUNTDIR.\n"
-    echo -e "Please unmount this partition and try again. Aborting.\n"
+    echo -e "Error: Either a partition other than $DESTMOUNTDEV is mounted at: $DESTMOUNTDIR.\n"
+    echo -e "or $DESTMOUNTDEV is mounted in multiple places.\n"
+    echo -e "Please unmount the partition(s) and try again. Aborting.\n"
     exit 1
   fi
   echo -e "$DESTMOUNTDEV already mounted at $MOUNTEDDIR. Continuing with backup ...\n"
