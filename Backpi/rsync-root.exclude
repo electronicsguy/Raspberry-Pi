@@ -16,8 +16,8 @@
 /var/log
 /var/cache
 
-# Exclude the /boot partition since it has to be mounted 
-# on the RPi and may cause a loop if not excluded
+# Exclude the /boot directory since it maps to a separate 
+# partition on the RPi-SDcard
 /boot
 
 # temporary and run-time dependent data in various home dirs
@@ -27,6 +27,7 @@
 /home/*/.config/chromium/*
 /home/*/.cache
 /home/*/.Trash
+/home/*/.dbus
 
 # X Windows System
 /home/*/.xsession-errors*
@@ -43,8 +44,10 @@
 # This script's log file
 /home/pi/.backpi/rsync.log
 
+# User specific exclusions
 # Output data directories in /home
 /home/pi/Photography
 /home/pi/Downloads
-# Used by raspi-mjpeg
+
+# Files used by raspi-mjpeg
 /var/www/media

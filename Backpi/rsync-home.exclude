@@ -8,6 +8,7 @@
 /.config/chromium/*
 /.cache
 /.Trash
+/.dbus
 
 # X Windows System
 /.xsession-errors*
