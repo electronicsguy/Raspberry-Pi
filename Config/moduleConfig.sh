@@ -7,8 +7,8 @@ CFGFILE="/boot/config.txt"
 # Note: These must be in single quotes for multiple words to be treated as a single
 # argument when passed as part of a array to a bash command. 
 # see this: http://stackoverflow.com/questions/30146241/error-with-linux-whiptail-dialog?noredirect=1#comment48401487_30146241
-moduleNames=('dtoverlay=w1-gpio' 'dtparam=spi' 'dtparam=i2c_arm' 'max_usb_current' 'start_x' 'hdmi_force_hotplug' 'hdmi_safe' 'disable_overscan')
-moduleDesc=('1-wire interface' 'SPI Interface' 'I2C Interface' 'Increase Max USB current to 1.2Amp' 'Camera' 'Force HDMI output instead of composite' 'Override HDMI safe mode' 'Disable display overscan')
+moduleNames=('dtoverlay=w1-gpio' 'dtparam=spi' 'dtparam=i2c_arm' 'max_usb_current' 'start_x' 'hdmi_force_hotplug' 'hdmi_safe' 'disable_overscan', 'dtoverlay=pitft28-resistive')
+moduleDesc=('1-wire interface' 'SPI Interface' 'I2C Interface' 'Set Max USB current to 1.2Amp' 'Camera' 'Force HDMI output' 'Override HDMI safe mode' 'Disable display overscan', 'Adafruit TFT LCD Screen')
 numModules=${#moduleNames[@]}
 choices=("OFF" "ON")
 
