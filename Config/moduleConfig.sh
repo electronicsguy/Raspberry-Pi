@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # (c) Sujay Phadke, 2015.
+# All Rights Reserved
 
 CFGFILE="/boot/config.txt"
 
