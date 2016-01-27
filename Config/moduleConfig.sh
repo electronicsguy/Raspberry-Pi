@@ -85,16 +85,16 @@ else
   if [[ $NOSUDO == 0 ]];
   then
       RESULT=$(whiptail \
-              --title "Config Modules State" \
+              --title "Module(s)/Setting(s) State" \
               --checklist --separate-output \
               --ok-button "Done" \
-              "Select modules to enable" \
+              "Select modules/settings to enable/disable" \
               $boxHeight $boxWidth $listHeight \
               "${CHECKLIST[@]}" \
               3>&1 1>&2 2>&3)
   else
       RESULT=$(whiptail \
-              --title "Config Modules State" \
+              --title "Module(s)/Setting(s) State" \
               --backtitle "In Read-only mode!!" \
               --checklist --separate-output \
               --ok-button "Exit" --nocancel\
